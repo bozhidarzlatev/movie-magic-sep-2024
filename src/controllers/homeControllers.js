@@ -1,32 +1,12 @@
 import {Router} from 'express';
+import movieService from '../services/movieService.js';
 
 const router = Router();
 
-const movies = [
-    {
-        id: 1,    
-        title: 'Jungle Cuise',
-        imageUrl: '/img/jungle-cruise.jpeg',
-        genre: 'Adventure',
-        description: 'Dreaming about saving countless lives and having another'
-    } ,     
-    {
-        id: 2,    
-        title: 'Durzost i krasota',
-        imageUrl: '/img/the-little-mermaid.jpg',
-        genre: 'Madafaka',
-        description: 'Rumenee vurni mi parite'
-    },     
-    {
-        id: 3,    
-        title: 'Shouto na Citiridis',
-        imageUrl: '/img/home-alone.jpeg',
-        genre: 'Tragediq',
-        description: 'DA si beshe sedql u komedi kluba'
-    }
-]
+
 
 router.get('/', (req, res) => {
+    const movies = movieService.getAll
     res.render(`home`, {movies} )
 });
 
