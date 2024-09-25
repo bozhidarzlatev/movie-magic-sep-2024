@@ -7,3 +7,4 @@ SoftUni JS Back-End Workshop
     2. Setup Express.js
     3. Setup view engine - handlebars
     4. Add resourses
+    5. Setup static route
