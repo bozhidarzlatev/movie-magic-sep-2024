@@ -8,3 +8,5 @@ SoftUni JS Back-End Workshop
     3. Setup view engine - handlebars
     4. Add resourses
     5. Setup static route
+    6. Render home view
+    7. Add routes and controlers
