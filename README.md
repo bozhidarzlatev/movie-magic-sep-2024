@@ -11,3 +11,5 @@ SoftUni JS Back-End Workshop
     6. Render home view
     7. Add routes and controlers
     8. Extract partial template
+    9. Add service and data layers
+    10. Add create page
