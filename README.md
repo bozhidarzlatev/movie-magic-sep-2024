@@ -10,3 +10,4 @@ SoftUni JS Back-End Workshop
     5. Setup static route
     6. Render home view
     7. Add routes and controlers
+    8. Extract partial template
