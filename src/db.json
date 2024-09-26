@@ -1,26 +1,35 @@
 {
-    "movies": [
-        {
-            "id": 1,    
-            "title": "Jungle Cuise",
-            "imageUrl": "/img/jungle-cruise.jpeg",
-            "genre": "Adventure",
-            "description": "Dreaming about saving countless lives and having another"
-        } ,     
-        {
-            "id": 2,    
-            "title": "Durzost i krasota",
-            "imageUrl": "/img/the-little-mermaid.jpg",
-            "genre": "Madafaka",
-            "description": "Rumenee vurni mi parite"
-        },     
-        {
-            "title": "Shouto na Citiridis",
-            "id": 3,    
-            "imageUrl": "/img/home-alone.jpeg",
-            "genre": "Tragediq",
-            "description": "DA si beshe sedql u komedi kluba"
-        }
-    ]
+  "movies": [
+    {
+      "id": 1,
+      "title": "Jungle Cuise",
+      "imageUrl": "/img/jungle-cruise.jpeg",
+      "genre": "Adventure",
+      "description": "Dreaming about saving countless lives and having another"
+    },
+    {
+      "id": 2,
+      "title": "Durzost i krasota",
+      "imageUrl": "/img/the-little-mermaid.jpg",
+      "genre": "Madafaka",
+      "description": "Rumenee vurni mi parite"
+    },
+    {
+      "title": "Shouto na Citiridis",
+      "id": 3,
+      "imageUrl": "/img/home-alone.jpeg",
+      "genre": "Tragediq",
+      "description": "DA si beshe sedql u komedi kluba"
+    },
+    {
+      "title": "NA baaba ti hurkata",
+      "genre": "Sci-Fi",
+      "director": "Nekoi si",
+      "year": "2024",
+      "imageUrl": "https://m.netinfo.bg/media/images/50566/50566335/745-425-baba.jpg",
+      "rating": "10",
+      "description": "яката раота",
+      "id": "3u3awi3cm1j4p8ca"
+    }
+  ]
 }
-

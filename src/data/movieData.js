@@ -1,12 +1,17 @@
 import fs from 'fs/promises';
 import path from 'path';
 
+const dbPath = path.resolve('./src/db.json')
+
 async function getDb() {
-    const dbPath = path.resolve('./src/db.json')
     const hsonResult = await fs.readFile(dbPath, {encoding: 'utf-8'} );
     const data = JSON.parse(hsonResult);
     
     return data
+}
+
+function saveDb(data) {
+    return fs.writeFile(dbPath, JSON.stringify(data, {} , 2))
 }
 
 async function getMovies() {
@@ -15,6 +20,14 @@ async function getMovies() {
     return db.movies
 }
 
+async function create(movieData) {
+    const db = await getDb();
+
+    db.movies.push(movieData);
+    return saveDb(db)
+}
+
 export default {
-    getMovies
+    getMovies,
+    create
 }
