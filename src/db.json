@@ -5,7 +5,7 @@
       "title": "Jungle Cuise",
       "imageUrl": "/img/jungle-cruise.jpeg",
       "genre": "Adventure",
-      "year": "2024",
+      "year": 2024,
       "rating": "7",
       "description": "Dreaming about saving countless lives and having another"
     },
@@ -14,7 +14,7 @@
       "title": "Durzost i krasota",
       "imageUrl": "/img/the-little-mermaid.jpg",
       "genre": "Madafaka",
-      "year": "2004",
+      "year": 2004,
       "rating": "3",
       "description": "Rumenee vurni mi parite"
     },

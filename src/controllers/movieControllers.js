@@ -14,6 +14,14 @@ router.post('/create' , async    (req, res) => {
     res.redirect('/');
 });
 
+router.get('/search' , async (req, res) => {
+    const query = req.query;
+    const movies = await movieService.getAll(query)
+
+    res.render('home' , {isSearch: true, movies, query});
+})
+
+
 router.get('/:movieId/details' , async  (req, res) => {
     const movieId = req.params.movieId
     const movie = await movieService.getOne(movieId);
@@ -25,11 +33,12 @@ router.get('/:movieId/details' , async  (req, res) => {
     res.render('movies/details', {movie})
 });
 
+
 function getRatingViewData(rating) {
     if(!Number.isInteger(rating)) {
         return 'n\\a'
     }
-    
+
     return '&#x2605;'.repeat(rating)
 }
 
