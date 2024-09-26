@@ -8,8 +8,16 @@ const create = (movie) => {
     movieData.create(movie);
 };
 
+const getOne = async (movieId) => {
+    const movie = await movieData.getMovies();
+    const resultMovie = movie.find(movie => movie.id === movieId);
+
+    return resultMovie;
+}
+
 export default {
     getAll,
-    create
+    create,
+    getOne
 }
 
