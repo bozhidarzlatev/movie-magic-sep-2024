@@ -21,13 +21,21 @@ router.get('/search' , async (req, res) => {
     res.render('home' , {isSearch: true, movies, query});
 })
 
-
 router.get('/:movieId/details' , async  (req, res) => {
     const movieId = req.params.movieId
     const movie = await movieService.getOne(movieId);
 
     //Prepare view data
+    movie.ratingView = getRatingViewData(movie.rating)
 
+    res.render('movies/details', {movie})
+});
+
+router.get('/movies/:movieId/details' , async  (req, res) => {
+    const movieId = req.params.movieId
+    const movie = await movieService.getOne(movieId);
+
+    //Prepare view data
     movie.ratingView = getRatingViewData(movie.rating)
 
     res.render('movies/details', {movie})
