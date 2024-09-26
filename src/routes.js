@@ -7,5 +7,9 @@ const router = Router();
 
 router.use(homeContollers);
 router.use('/movies', movieContollers);
+router.all('*', (req, res) =>{
+    res.render('404')
+})
+
 
 export default router;

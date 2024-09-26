@@ -4,6 +4,7 @@ import uniqid from 'uniqid'
 const getAll = () => movieData.getMovies();
 
 const create = (movie) => {
+    movie.rating = Number(movie.rating)
     movie.id = uniqid();
     movieData.create(movie);
 };

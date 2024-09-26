@@ -5,6 +5,7 @@
       "title": "Jungle Cuise",
       "imageUrl": "/img/jungle-cruise.jpeg",
       "genre": "Adventure",
+      "year": "2024",
       "rating": "7",
       "description": "Dreaming about saving countless lives and having another"
     },
@@ -13,6 +14,7 @@
       "title": "Durzost i krasota",
       "imageUrl": "/img/the-little-mermaid.jpg",
       "genre": "Madafaka",
+      "year": "2004",
       "rating": "3",
       "description": "Rumenee vurni mi parite"
     },
@@ -33,6 +35,16 @@
       "rating": "10",
       "description": "яката раота",
       "id": "3u3awi3cm1j4p8ca"
+    },
+    {
+      "title": "A Quiet Place",
+      "genre": "Sci-Fi",
+      "director": "John Krasinski",
+      "year": "2018",
+      "imageUrl": "https://m.media-amazon.com/images/I/517JvwHpxjL._AC_UF894,1000_QL80_.jpg",
+      "rating": "9",
+      "description": "A family struggles for survival in a world invaded by alien creatures with ultra-sensitive hearing.",
+      "id": "3u3awkh8m1j7tjw3"
     }
   ]
 }
