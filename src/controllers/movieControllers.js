@@ -31,15 +31,15 @@ router.get('/:movieId/details' , async  (req, res) => {
     res.render('movies/details', {movie})
 });
 
-router.get('/movies/:movieId/details' , async  (req, res) => {
-    const movieId = req.params.movieId
-    const movie = await movieService.getOne(movieId);
+// router.get('/movies/:movieId/details' , async  (req, res) => {
+//     const movieId = req.params.movieId
+//     const movie = await movieService.getOne(movieId);
 
-    //Prepare view data
-    movie.ratingView = getRatingViewData(movie.rating)
+//     //Prepare view data
+//     movie.ratingView = getRatingViewData(movie.rating)
 
-    res.render('movies/details', {movie})
-});
+//     res.render('movies/details', {movie})
+// });
 
 
 function getRatingViewData(rating) {
