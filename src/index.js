@@ -1,10 +1,15 @@
 import express from 'express';
+
+
 import routes from './routes.js';
 import handlebarInit from './config/handlebarsinit.js';
 import expressInit from './config/expressinit.js';
+import mongooesInit from './config/mongooseinit.js';
+
 
 const app = express();
 
+mongooesInit()
 handlebarInit(app)
 expressInit(app)
 
