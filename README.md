@@ -2,7 +2,7 @@
 SoftUni JS Back-End Workshop
 
 
-## Developing Steps
+## Developing Steps - Part 1
     1. Initial Project Architecture
     2. Setup Express.js
     3. Setup view engine - handlebars
@@ -15,3 +15,8 @@ SoftUni JS Back-End Workshop
     10. Add create page
     11. Add details page
     12. Add search page
+
+## Developing Steps - Part 2
+    1. Extarct init files
+    2. Setup mongoose
+    3. Add models
