@@ -19,4 +19,5 @@ SoftUni JS Back-End Workshop
 ## Developing Steps - Part 2
     1. Extarct init files
     2. Setup mongoose
-    3. Add models
+    3. Add movie model
+    4. Convert file based storage to db storage

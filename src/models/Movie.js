@@ -12,4 +12,4 @@ const movieShema = new Schema({
 
 const Movie = model('Movie', movieShema );
 
-export default Movie
+export default Movie;
