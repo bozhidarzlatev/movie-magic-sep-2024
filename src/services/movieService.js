@@ -20,7 +20,7 @@ const getAll = async (query = {}) => {
 
 const create = (movie) => Movie.create(movie);
 
-const getOne = (movieId) => Movie.findById(movieId);
+const getOne = (movieId) => Movie.findById(movieId).lean();
 
 
 
