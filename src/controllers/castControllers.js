@@ -9,7 +9,7 @@ router.get('/create', (req, res) =>{
 
 router.post('/create', async (req, res) =>{
     const castDate = req.body;
-    console.log(castDate);
+    
     await castService.create(castDate) 
     res.redirect('/')
 })
