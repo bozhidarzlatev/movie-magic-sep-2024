@@ -52,13 +52,23 @@ router.get('/:movieId/attach', async (req, res) => {
     res.render('movies/attach', {movie, casts})
 });
 
+router.post('/:movieId/attach', async (req, res) => {
+    const movieId = req.params.movieId;
+    const castId = req.body.cast;
 
-function getRatingViewData(rating) {
-    if(!Number.isInteger(rating)) {
-        return 'n\\a'
-    }
+    await movieService.attach(movieId, castId)
 
-    return '&#x2605;'.repeat(rating)
-}
+    res.redirect(`/movies/${movieId}/details`)
+    
+});
+
+
+// function getRatingViewData(rating) {
+//     if(!Number.isInteger(rating)) {
+//         return 'n\\a'
+//     }
+
+//     return '&#x2605;'.repeat(rating)
+// }
 
 export default router;

@@ -25,3 +25,10 @@ SoftUni JS Back-End Workshop
     6. Add create cast page
     7. Add attach cast page
     8. Show cast in details page
+
+Bonus:
+-   [x] Rating
+-   [ ] Fix filtering for movies
+-   [ ] Add character name
+-   [ ] Filter cast based on added ones
+-   [ ] Atlas
